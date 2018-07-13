@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FF-Survey</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <!-- User inputs -->
+
+    <div class="container" style="background-color: lightcyan">
+        <p>
+            <h3>Survey </h3>(Remember to go with your gut reaction)</p>
+        <hr>
+        <h5>About You</h5>
+        <form>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Your Name</label>
+                <input type="name" class="form-control" id="name" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Photo Link</label>
+                <input type="photo" class="form-control" id="photo" placeholder="http:\\photo\link       if blank, an unflattering photo will be assigned to you">
+            </div>
+            <br>
+            <br>
+
+            <!-- user responses to questions -->
+
+            <hr>
+            <p>Dogs are just dopey, but cats are inherently evil.</p>
+            <div class="form-group" style="width: 250px">
+                <!-- <label for="exampleFormControlSelect1"></label> -->
+                <select id="q1" class="form-control form-control-sm">
+                    <option placeholder="Name">1 Totally Agree!</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 Not So Much!</option>
+                </select>
+            </div>
+            <hr>
+            <p>The baseball movie "The Natural" is actually a 'chick flick'.</p>
+            <div class="form-group" style="width: 250px">
+                <!-- <label for="exampleFormControlSelect1"></label> -->
+                <select id="q2" class="form-control form-control-sm" id="exampleFormControlSelect1">
+                    <option>1 Totally Agree!</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 Not So Much!</option>
+                </select>
+            </div>
+            <hr>
+            <p>Licking an envelope is the only acceptable way to send spit through the mail</p>
+            <div class="form-group" style="width: 250px">
+                <!-- <label for="exampleFormControlSelect1"></label> -->
+                <select id="q3" class="form-control form-control-sm" id="exampleFormControlSelect1">
+                    <option>1 Totally Agree!</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 Not So Much!</option>
+                </select>
+            </div>
+            <hr>
+            <p>It's perfectly acceptable to check-raise 2 7 offsuit</p>
+            <div class="form-group" style="width: 250px">
+                <!-- <label for="exampleFormControlSelect1"></label> -->
+                <select id="q4" class="form-control form-control-sm" id="exampleFormControlSelect1">
+                    <option>1 Totally Agree!</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 Not So Much!</option>
+                </select>
+            </div>
+            <hr>
+            <p>Harry could've done better than Sally.</p>
+            <div class="form-group" style="width: 250px">
+                <!-- <label for="exampleFormControlSelect1"></label> -->
+                <select id="q5" class="form-control form-control-sm" id="exampleFormControlSelect1">
+                    <option>1 Totally Agree!</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 Not So Much!</option>
+                </select>
+            </div>
+            <hr>
+            <p>I can imagine a world with no hypothetical situations.</p>
+            <div class="form-group" style="width: 250px">
+                <!-- <label for="exampleFormControlSelect1"></label> -->
+                <select id="q6" class="form-control form-control-sm" id="exampleFormControlSelect1">
+                    <option>1 Totally Agree!</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 Not So Much!</option>
+                </select>
+            </div>
+            <hr>
+            <p>Duct tape is a 'tool'.</p>
+            <div class="form-group" style="width: 250px">
+                <!-- <label for="exampleFormControlSelect1"></label> -->
+                <select id="q7" class="form-control form-control-sm" id="exampleFormControlSelect1">
+                    <option>1 Totally Agree!</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 Not So Much!</option>
+                </select>
+            </div>
+            <hr>
+            <p>I know what color cerise is.</p>
+            <div class="form-group" style="width: 250px">
+                <!-- <label for="exampleFormControlSelect1"></label> -->
+                <select id="q8" class="form-control form-control-sm" id="exampleFormControlSelect1">
+                    <option>1 Totally Agree!</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 Not So Much!</option>
+                </select>
+            </div>
+            <hr>
+            <p>A homing pigeon that doesn't return is just a pigeon.</p>
+            <div class="form-group" style="width: 250px">
+                <!-- <label for="exampleFormControlSelect1"></label> -->
+                <select id="q9" class="form-control form-control-sm" id="exampleFormControlSelect1">
+                    <option>1 Totally Agree!</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 Not So Much!</option>
+                </select>
+            </div>
+            <hr>
+            <p>4:20 means nothing to me.</p>
+            <div class="form-group" style="width: 250px">
+                <!-- <label for="exampleFormControlSelect1"></label> -->
+                <select id="q10" class="form-control form-control-sm" id="exampleFormControlSelect1">
+                    <option>1 Totally Agree!</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 Not So Much!</option>
+                </select>
+            </div>
+            <hr>
+            <button type="button" class="btn btn-primary btn-lg btn-block">Submit</button>
+        </form>
+        <div class="card">
+            <div class="card-header" style="font-size: 8px; text-align: center">
+                FriendFinder
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Your New Friend</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <img id="modalPic" src="#" alt="Best Friend Photo" height="314" width="498">
+                <p id="modalFriend"></p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- JAVASCRIPT AND GATHER INFO FOR POST -->
+
+    <script>
+        $(document).ready(function () {
+
+
+
+            $(".btn-primary").on("click", function (event) {
+                event.preventDefault();
+                var scores = []
+                scores.push(parseInt($("#q1").val()));
+                scores.push(parseInt($("#q2").val()));
+                scores.push(parseInt($("#q3").val()));
+                scores.push(parseInt($("#q4").val()));
+                scores.push(parseInt($("#q5").val()));
+                scores.push(parseInt($("#q6").val()));
+                scores.push(parseInt($("#q7").val()));
+                scores.push(parseInt($("#q8").val()));
+                scores.push(parseInt($("#q9").val()));
+                scores.push(parseInt($("#q10").val()));
+
+                var pic = $("#photo").val().trim()
+                if (pic) {
+                    picSend = pic
+                } else {
+                    picSend = "http://waterfordwhispersnews.com/wp-content/uploads/2018/07/feature-12-1.jpg";
+                }
+
+                console.log(scores);
+                var newFriend = {
+                    name: $("#name").val().trim(),
+                    photo: picSend,
+                    scoresPassed: scores
+                }
+
+
+                console.log(newFriend);
+                console.log(newFriend.scoresPassed[0]);
+
+                // POST INFO
+                var currentURL = window.location.origin;
+                $.post(currentURL + "/api/friends", newFriend, function (data) {
+                    if (data) {
+                        $("#modalFriend").text(data.name);
+                        $("#modalPic").attr("src", data.photo);
+                        //compat rating?
+                        $("#exampleModal").modal("toggle");
+                        // location.assign("/home")
+                    }
+
+                    else {
+                        alert("Sorry there was an error somewhere");
+                    }
+
+                    // Clear form just in case
+                    $("#name").val("");
+                    $("#photo").val("");
+                    $("#q1").val("");
+                    $("#q2").val("");
+                    $("#q3").val("");
+                    $("#q4").val("");
+                    $("#q5").val("");
+                    $("#q6").val("");
+                    $("#q7").val("");
+                    $("#q8").val("");
+                    $("#q9").val("");
+                    $("#q10").val("");
+                });
+            })
+        });
+    </script>
+
+
+
+
+    <!-- moved script sources up, weren't working here?? -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script> -->
+</body>
+
+</html>
